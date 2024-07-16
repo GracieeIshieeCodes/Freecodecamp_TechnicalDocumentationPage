@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+     <header>CSS Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a></li>
+
+            <li><a class="nav-link" href="#What_Should_I_Know_Before_Starting_with_CSS?">What Should I Know Before Starting with CSS?</a></li>
+
+  <li><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li>
+
+  <li><a class="nav-link" href="#CSS_Box_Model">CSS Box Model</a></li>
+
+  <li><a class="nav-link" href="#Responsive_Design_with_CSS">Responsive Design with CSS</a></li>
+          </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_CSS">
+      <header>Introduction to CSS</header>
+      <article>
+        <p><strong>CSS (Cascading Style Sheets)</strong> is a language used to style HTML (Hypertext Markup Language) documents. While HTML defines the structure and content of a webpage, CSS controls how HTML elements are displayed on screen or in other media. This includes aspects like colors, fonts, spacing, and layout. By separating content from presentation, CSS allows web developers to create visually appealing websites and ensure a consistent look across multiple pages.</p>
+        <p>CSS is essential for modern web design and development. It allows developers to separate the visual presentation of a site from its structure, making it easier to maintain and update.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="What_Should_I_Know_Before_Starting_with_CSS?">
+      <header>What Should I Know Before Starting with CSS?</header>
+      <article>
+        <p>Before diving into CSS, it's helpful to understand basic HTML concepts. Knowing how HTML tags, elements, and attributes work will make it easier to apply styles using CSS.</p>
+        <p>Familiarize yourself with selectors in HTML, as CSS uses selectors to target specific elements for styling. For example, understanding the difference between block-level and inline elements in HTML will influence how you structure your CSS rules.</p>
+        <p>Basic knowledge of web development tools and text editors is also beneficial. Tools like Chrome Developer Tools can help you inspect and debug your CSS code.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="CSS_Selectors">
+      <header>CSS Selectors</header>
+      <article>
+        <p>CSS selectors are patterns used to select and style HTML elements based on their tag name, class, ID, attributes, or relationship with other elements. Here are a few common selectors:</p>
+        <ul>
+          <li><strong>Tag selector:</strong> Styles all instances of a specific HTML tag, like p for paragraphs.</li>
+          <li><strong>Class selector:</strong> styles elements with a specific class attribute, denoted by <code>.classname</code>.</li>
+          <li><strong>ID selector:</strong> styles a single, unique element identified by its ID attribute, denoted by <code>#idname</code>.</li>
+          <li><strong>Attribute selector:</strong> Styles elements based on their attributes, like <code>[type="text"]</code> for <code>&lt;input&gt;</code> elements with <code>type="text"</code>.</li>
+        </ul>
+        <p>Example:</p>
+        <code class="codes">
+          /* Selects all &lt;p&gt; elements */
+          p {
+            color: blue;
+          }
+          /* Selects elements with class 'highlight' */
+          .highlight {
+            background-color: yellow;
+          }
+          /* Selects the element with ID 'header' */
+          #header {
+            font-size: 24px;
+          }
+        </code>
+        <p>Understanding how to use CSS selectors effectively is crucial for styling elements accurately and efficiently in your web projects.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="CSS_Box_Model">
+      <header>CSS Box Model</header>
+      <article>
+        <p>The CSS box model describes how elements are rendered on a webpage, including their dimensions and spacing. It consists of four main components: content, padding, border, and margin.</p>
+        <ul>
+          <li><strong>Content:</strong> The actual content of the element, such as text or images.</li>
+          <li><strong>Padding:</strong> Space between the content and the element's border.</li>
+          <li><strong>Border:</strong> A border surrounding the padding and content.</li>
+          <li><strong>Margin:</strong> Space outside the element, creating distance between it and other elements.</li>
+        </ul>
+        <p>Example:</p>
+        <code class="codes">
+          .box {
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 1px solid black;
+            margin: 10px;
+          }
+        </code>
+        <p>Understanding the box model is essential for controlling the layout and spacing of elements on a webpage.</p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Responsive_Design_with_CSS">
+      <header>Responsive Design with CSS</header>
+      <article>
+        <p>Responsive design ensures websites look good on all devices, from desktops to smartphones. CSS features like media queries allow developers to apply different styles based on the device's screen size or orientation. This flexibility improves user experience by adapting layouts and content to fit various screen sizes seamlessly.</p>
+       <code class="codes">
+          @media screen and (max-width: 600px) {
+            /* Styles for screens smaller than 600px wide */
+            .container {
+              flex-direction: column;
+            }
+            .sidebar {
+              display: none;
+            }
+          }
+        </code>
+        <p>By using responsive design techniques, you can ensure that your website is accessible and user-friendly on all devices.</p>
+        <p>Responsive design also involves flexible grid layouts, fluid images, and other techniques to create a seamless experience across different screen sizes.</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
